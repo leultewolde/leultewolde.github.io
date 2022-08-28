@@ -1,0 +1,59 @@
+#wbody {
+  margin-top: 100px;
+}
+
+#header {
+  overflow: hidden;
+  text-align: center;
+}
+
+#header span {
+  margin: 25px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: monospace;
+  color: #5100ff;
+}
+
+#header i {
+  font-weight: 900;
+}
+
+#socials {
+  overflow: hidden;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#socials a {
+  display: inline-flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: auto;
+  margin: 20px 5px;
+  padding: 20px 30px;
+  align-items: center;
+  justify-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#socials img {
+  width: 30px;
+}
+
+#socials span {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  font-family: monospace;
+  color: slategrey;
+}
+
+#socials a:hover span {
+  text-decoration: underline;
+}
