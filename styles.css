@@ -1,59 +1,83 @@
-#wbody {
-  margin-top: 100px;
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 #header {
-  overflow: hidden;
   text-align: center;
+  padding: 10px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
-#header span {
-  margin: 25px;
-  font-size: 3.5rem;
+#title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: monospace;
-  color: #5100ff;
+  color: #7535ff;
 }
 
-#header i {
-  font-weight: 900;
+#headline {
+  font-size: 1.25rem;
+  font-family: monospace;
+  color: #261e36;
 }
 
 #socials {
-  overflow: hidden;
-  text-align: center;
-  margin-top: 50px;
+  margin-top: 10px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-}
-
-#socials a {
-  display: inline-flex;
-  flex-direction: column;
-  overflow: hidden;
-  width: auto;
-  margin: 20px 5px;
-  padding: 20px 30px;
-  align-items: center;
-  justify-items: center;
-  text-decoration: none;
-  cursor: pointer;
+  gap: 20px;
 }
 
 #socials img {
   width: 30px;
+  transition: transform 0.3s;
 }
 
-#socials span {
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 10px;
-  font-family: monospace;
-  color: slategrey;
+#socials img:hover {
+  transform: scale(1.2);
 }
 
-#socials a:hover span {
-  text-decoration: underline;
+.content {
+  display: none;
+  flex: 1;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  border-bottom: 2px solid #7535ff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 5px 0;
+}
+
+p {
+  margin: 5px 0 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+#temp-p{
+  text-align: center;
+  margin: 25px;
+  font-size: 30px;
+  color: rgb(233, 43, 0);
+  border: solid 2px yellow;
 }
